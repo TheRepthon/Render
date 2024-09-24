@@ -1,0 +1,34 @@
+services:
+  - type: web
+    runtime: python
+    name: repthon
+    plan: free
+    branch: main
+    buildCommand: ./build.sh
+    startCommand: python3 app.py & bash banen
+    repo: https://github.com/Baqirub/Render.git
+    region: frankfurt
+    envVars:
+      - key: API_ID
+        value: 13740761
+      - key: API_HASH
+        value: 4ce319a92c01fab2b02551af8d7f73a4
+      - key: ENV
+        value: ANYTHING
+      - key: STRING_SESSION
+        sync: false
+      - key: TG_BOT_TOKEN
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TZ
+        value: Asia/Baghdad
+      - key: DATABASE_URL
+        fromDatabase:
+          name: postgres
+          property: connectionString
+
+databases:
+  - name: postgres
+    plan: free
+    region: frankfurt
