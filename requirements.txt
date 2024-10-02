@@ -30,7 +30,6 @@ gsearch
 googletrans-py
 hachoir
 heroku3
-html-telegraph-poster
 httpx[http2]
 humanize
 IMDbPY
@@ -68,6 +67,7 @@ pydub
 programmingquotes
 pyquery
 py-tgcalls
+pytube
 qrcode
 regex
 requests
@@ -80,7 +80,6 @@ sqlalchemy-json
 sqlalchemy==1.3.23
 speechrecognition
 ShazamAPI
-telegraph
 tgcrypto
 Tgcrypto
 tswift
