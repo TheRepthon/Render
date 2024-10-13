@@ -32,6 +32,7 @@ hachoir
 heroku3
 httpx[http2]
 humanize
+html-telegraph-poster
 IMDbPY
 ipaddress
 img2html
@@ -67,7 +68,6 @@ pydub
 programmingquotes
 pyquery
 py-tgcalls
-pytubefix
 qrcode
 regex
 requests
@@ -83,6 +83,7 @@ ShazamAPI
 tgcrypto
 Tgcrypto
 tswift
+telegraph
 ujson
 urlextract
 user_agent
