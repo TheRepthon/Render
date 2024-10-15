@@ -67,9 +67,7 @@ pytz
 pydub
 programmingquotes
 pyquery
-py-tgcalls
-pytube
-pytubefix
+pytgcalls
 qrcode
 regex
 requests
