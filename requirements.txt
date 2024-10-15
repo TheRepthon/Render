@@ -67,7 +67,7 @@ pytz
 pydub
 programmingquotes
 pyquery
-pytgcalls==3.0.0
+py-tgcalls
 qrcode
 regex
 requests
