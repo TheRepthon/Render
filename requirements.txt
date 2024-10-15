@@ -96,3 +96,4 @@ youtube-search-python
 youtube_dl
 youtube-search
 yt-dlp
+git+https://github.com/pytgcalls/pytgcalls.git
