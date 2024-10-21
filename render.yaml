@@ -1,11 +1,11 @@
 services:
   - type: web
-    runtime: docker
+    runtime: python
     name: repthon
     plan: free
     branch: main
-    rootDir: repthon
-    dockerCommand: ./start.sh
+    buildCommand: ./build.sh
+    startCommand: bash start.sh
     repo: https://github.com/Baqirub/Render.git
     region: frankfurt
     envVars:
@@ -19,6 +19,8 @@ services:
         sync: false
       - key: TG_BOT_TOKEN
         sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.9
       - key: TZ
         value: Asia/Baghdad
       - key: DATABASE_URL
