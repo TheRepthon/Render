@@ -4,10 +4,16 @@ services:
     name: repthon
     plan: free
     branch: main
-    rootDir: repthon/docker
+    rootDir: repthon
     dockerCommand: ./start.sh
     dockerfilePath: ./Dockerfile
     dockerContext: .
+    scaling: # Autoscaling configuration
+      minInstances: 1
+      maxInstances: 3
+      targetMemoryPercent: 60 # Optional if targetCPUPercent is set
+      targetCPUPercent: 60
+      healthCheckPath: /
     repo: https://github.com/Baqirub/Render.git
     region: frankfurt
     envVars:
