@@ -13,7 +13,6 @@ services:
       maxInstances: 3
       targetMemoryPercent: 60 # Optional if targetCPUPercent is set
       targetCPUPercent: 60
-      healthCheckPath: /
     repo: https://github.com/Baqirub/Render.git
     region: frankfurt
     envVars:
