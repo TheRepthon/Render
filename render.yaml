@@ -20,7 +20,7 @@ services:
       - key: TG_BOT_TOKEN
         sync: false
       - key: PYTHON_VERSION
-        value: 3.11.9
+        value: 3.10.9
       - key: TZ
         value: Asia/Baghdad
       - key: DATABASE_URL
