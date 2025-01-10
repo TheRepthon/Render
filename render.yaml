@@ -4,7 +4,7 @@ services:
     name: repthon
     plan: free
     branch: main
-    rootDir: repthon
+    rootDir: Render
     dockerCommand: ./start.sh
     repo: https://github.com/Baqirub/Render.git
     region: frankfurt
