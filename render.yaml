@@ -1,12 +1,12 @@
 services:
   - type: web
     runtime: docker
-    name: repthon
+    name: Render
     plan: free
     branch: main
     rootDir: Render
     dockerCommand: ./start.sh
-    repo: https://github.com/Baqirub/Render.git
+    repo: https://github.com/TheRepthon/Render.git
     region: frankfurt
     envVars:
       - key: API_ID
