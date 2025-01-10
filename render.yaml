@@ -4,7 +4,7 @@ services:
     name: Render
     plan: free
     branch: main
-    rootDir: Render
+    rootDir: Dockerfile
     dockerCommand: ./start.sh
     repo: https://github.com/TheRepthon/Render.git
     region: frankfurt
