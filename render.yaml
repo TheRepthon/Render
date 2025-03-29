@@ -1,11 +1,11 @@
 services:
   - type: web
-    runtime: docker
+    runtime: python
     name: Render
     plan: free
     branch: main
-    rootDir: Dockerfile
-    dockerCommand: ./start.sh
+    buildCommand: ./build.sh
+    startCommand: ./start.sh
     repo: https://github.com/TheRepthon/Render.git
     region: frankfurt
     envVars:
@@ -15,6 +15,8 @@ services:
         value: 4ce319a92c01fab2b02551af8d7f73a4
       - key: ENV
         value: ANYTHING
+      - key: PYTHON_VERSION
+        value: 3.11.9
       - key: STRING_SESSION
         sync: false
       - key: TG_BOT_TOKEN
