@@ -26,12 +26,12 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "Repthon" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL0JhcWlydWIvUmVuZGVyLmdpdA==" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVJlcHRob24vUmVuZGVyLmdpdA==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL0JhcWlydWIvUmVuZGVyLmdpdA==" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVJlcHRob24vUmVuZGVyLmdpdA==" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -44,7 +44,7 @@ _run_python_code() {
 _run_catpack_git() {
     $(_run_python_code 'from git import Repo
 import sys
-OFFICIAL_UPSTREAM_REPO = "https://github.com/Baqirub/Render"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/TheRepthon/Render"
 ACTIVE_BRANCH_NAME = "main"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
