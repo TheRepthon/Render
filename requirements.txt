@@ -93,5 +93,5 @@ wikipedia
 youtube-search-python
 youtube_dl
 youtube-search
-yt-dlp
+yt-dlp==2025.06.30
 git+https://github.com/pytgcalls/pytgcalls.git
