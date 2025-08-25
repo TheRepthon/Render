@@ -95,3 +95,4 @@ youtube_dl
 youtube-search
 yt-dlp==2025.06.30
 git+https://github.com/pytgcalls/pytgcalls.git
+git+https://github.com/jrottenberg/ffmpeg.git
