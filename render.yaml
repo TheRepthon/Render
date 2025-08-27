@@ -4,8 +4,8 @@ services:
     name: Render
     plan: free
     branch: main
-    rootDir: app
-    dockerCommand: start.sh
+    rootDir: .
+    dockerCommand: bash start.sh
     repo: https://github.com/TheRepthon/Render.git
     region: frankfurt
     envVars:
