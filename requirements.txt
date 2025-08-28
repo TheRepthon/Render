@@ -49,6 +49,7 @@ moviepy
 nekos.py
 opentele
 ocrspace
+openai
 Pillow
 prettytable
 psutil
@@ -66,8 +67,6 @@ python-dotenv
 pytz
 pydub
 programmingquotes
-pytube
-pyquery
 qrcode
 regex
 requests
