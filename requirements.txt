@@ -46,6 +46,7 @@ lyricsgenius
 markdown
 motor
 moviepy
+mutagen
 nekos.py
 opentele
 ocrspace
@@ -67,6 +68,7 @@ python-dotenv
 pytz
 pydub
 programmingquotes
+py-tgcalls
 qrcode
 regex
 requests
@@ -95,4 +97,3 @@ youtube-search-python
 youtube_dl
 youtube-search
 yt-dlp
-git+https://github.com/pytgcalls/pytgcalls.git
